@@ -1,0 +1,23 @@
+package dtos;
+
+import java.time.LocalDate;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+
+import jakarta.validation.constraints.NotBlank;
+
+public class PacienteResponseDTO {
+	
+	private Long pacienteId;
+	private String nome;
+	private String cpf;
+	private String telefone;
+	private String email;
+    
+    @JsonDeserialize
+    @JsonFormat(pattern = "dd/MM/yyyy")
+    private LocalDate dataNascimento;
+
+
+}

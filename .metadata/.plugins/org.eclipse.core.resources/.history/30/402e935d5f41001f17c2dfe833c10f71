@@ -1,0 +1,15 @@
+package dtos;
+
+import jakarta.validation.constraints.NotBlank;
+
+public class EnderecoRequestDTO {
+
+    @NotBlank private String logradouro;
+    @NotBlank private String estado;
+    @NotBlank private String cidade;
+    @NotBlank private String numero;
+    @NotBlank private String cep;
+
+    
+	
+}
